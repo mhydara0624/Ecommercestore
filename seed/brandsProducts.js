@@ -85,7 +85,7 @@ const main = async () => {
       image:
         'https://lh3.googleusercontent.com/FKs5XMvwuBYfUfNSEk_R5VQmXvJSrz1GatoJetoVgpYW4q47UFocEHdVvLpHEHZQLMmmuh32XdYXZ1PLt_AB2rAV284AP6MuFwX8Dw=s1440',
       description:
-        "This is the second edition of  the google smart glasses collection. Great technology and a collector's item. ",
+        "This is the second edition of the google smart glasses collection. Great technology and a collector's item. ",
       price: '1200',
       brand: brand4._id
     }
