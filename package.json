@@ -1,0 +1,23 @@
+{
+  "name": "ecommercestore",
+  "version": "1.0.0",
+  "description": "Ecommerce is the future of our economy. As an upcoming software engineer I want to show I can make a product for real world use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhydara0624/Ecommercestore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhydara0624/Ecommercestore/issues"
+  },
+  "homepage": "https://github.com/mhydara0624/Ecommercestore#readme",
+  "dependencies": {
+    "mongoose": "^6.0.2"
+  }
+}
