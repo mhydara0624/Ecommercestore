@@ -15,7 +15,7 @@ Ecommerce is the future of our economy. As an upcoming software engineer I want 
 <li> Heroku
 
 # Getting Started
-This E-commerce store will be a full stack MERN application that will be depolyed on Heroku. This application will be a website with a store page displaying various products along with their price and other information. Clicking onto the add cart button will add the products to a functional shopping cart.
+This E-commerce store will be a full stack MERN application that will be depolyed on Heroku. This application will be a website with a store page displaying various products along with their price and other information. Clicking onto the add cart button will add the products to a functional shopping cart. In addition it will have a checkout page with a form for payment.
 
 # ERD
  <img src = 'mdpictures/Ecommerce ERD1.png'>
