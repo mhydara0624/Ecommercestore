@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import TextInput from '../components/TextInput'
+
 
 function ProductForm(props) {
   const handleSubmit = (e) => {
     props.addProduct(e)
+    props.history.push('/store')
   }
- useEffect(() => {
-   let selectedProduct = props.productss.find((product)=>product._id)
- },[])
   
   
   return (
@@ -25,7 +24,7 @@ function ProductForm(props) {
           type="text"
           value={props.newProduct.image}
           onChange={props.handleChange}
-          name={'img'}
+          name={'image'}
           placeholder={'image'}
         />
         <TextInput

@@ -5,36 +5,35 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL } from './globals'
 import { Route, Switch } from 'react-router-dom'
-import Home from './pages/Home.jsx'
+import Home from './pages/Home'
 import Store from './pages/Store'
+import ProductForm from './pages/ProductForm'
 
 function App() {
   const [products, setProducts] = useState([])
   const [newProduct, setNewProduct] = useState({
-    id: '',
-    name: '',
-    img: '',
+    title: '',
+    image: '',
     description: '',
-    price: ''
+    price: '',
+    brand: ''
   })
 
   const addProduct = (e) => {
     e.preventDefault()
-    const currentProduct = products
-    const newProduct = {
-      ...newProduct,
-      id: parseInt(products.length + 1),
-      price: parseInt(newProduct.price)
-    }
-    currentProduct.push(newProduct)
-    setProducts(newProduct)
-    setNewProduct({ id: '', name: '', img: '', description: '', price: '' })
+    axios.post(BASE_URL, {
+      title: '',
+      image: '',
+      description: '',
+      price: '',
+      brand: ''
+    })
   }
-
   const handleChange = (e) => {
-    setNewProduct({ ...newProduct, [e.target.name]: e.target.value })
+    const addedProduct = { ...setNewProduct }
+    addedProduct[e.target.id] = e.target.value
+    setNewProduct(addedProduct)
   }
-
   useEffect(() => {
     async function getProducts() {
       let res = await axios.get(`${BASE_URL}`)
@@ -57,6 +56,18 @@ function App() {
             path="/store"
             component={(routerProps) => (
               <Store {...routerProps} products={products} />
+            )}
+          />
+          <Route
+            exact
+            path="/admin"
+            render={(props) => (
+              <ProductForm
+                {...props}
+                newProduct={newProduct}
+                handleChange={handleChange}
+                addProduct={addProduct}
+              />
             )}
           />
         </Switch>
