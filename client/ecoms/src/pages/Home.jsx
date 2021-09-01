@@ -7,8 +7,8 @@ function Home(props) {
     <div className="home">
       <div>
         <img
-          style={{ display: 'block', maxWidth: '100%' }}
-          src=""
+          className='background' style={{ display: 'block', maxWidth: '100%' }}
+          src="https://img.freepik.com/free-vector/modern-wavy-gradient-screensaver_79603-828.jpg?size=626&ext=jpg"
           
         />
       </div>

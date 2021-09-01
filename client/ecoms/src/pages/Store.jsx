@@ -2,7 +2,8 @@ import React from 'react'
 import ProductCard from '../components/ProductCardComp'
 
 function Store(props){
-  const storeListings = props.products.map((product) => {
+  const productse = props.products.products
+  const storeListings = productse.map((product) => {
     return (
       < ProductCard
       key={`${product._id}`} 
@@ -11,6 +12,7 @@ function Store(props){
   })
 return<div className="listings"> {storeListings} </div>
 }
+
 
 export default Store
 

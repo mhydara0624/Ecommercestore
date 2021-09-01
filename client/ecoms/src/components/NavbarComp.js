@@ -17,6 +17,9 @@ function Navbars() {
           <Nav.Link as={NavLink} to="/cart">
             Cart
           </Nav.Link>
+          <Nav.Link as={NavLink} to="/admin">
+            Admin
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>
