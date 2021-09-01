@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
 function Navbars() {
   return (
@@ -7,9 +8,15 @@ function Navbars() {
       <Container>
         <Navbar.Brand href="#home">Rare Electronics</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Store</Nav.Link>
-          <Nav.Link href="#pricing">Cart</Nav.Link>
+          <Nav.Link as={NavLink} to="/">
+            Home
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/store">
+            Store
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/cart">
+            Cart
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>

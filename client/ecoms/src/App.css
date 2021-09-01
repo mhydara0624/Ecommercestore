@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.home,
+.home div {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.listings,
+.home,
+.home div {
+  display: flex;
+}
+
+h2 {
+  text-align: left;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Georgia';
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
