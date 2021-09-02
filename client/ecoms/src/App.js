@@ -56,7 +56,6 @@ function App() {
             path="/admin"
             render={(props) => (
               <ProductForm
-                // {...props}
                 newProduct={newProduct}
                 handleChange={handleChange}
                 addProduct={addProduct}

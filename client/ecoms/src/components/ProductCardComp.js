@@ -3,6 +3,7 @@ import { Card, Button } from 'react-bootstrap'
 
 function ProductCard(props) {
   const { product } = props
+
   return (
     <Card style={{ width: '19rem' }}>
       <Card.Img variant="top" src={product.image} />
