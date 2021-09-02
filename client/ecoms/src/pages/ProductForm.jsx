@@ -1,24 +1,26 @@
 import React from 'react'
 import TextInput from '../components/TextInput'
+// import { Button } from 'react-bootstrap'
 
 
 function ProductForm(props) {
+  
   const handleSubmit = (e) => {
-    props.addProduct(e)
-    props.history.push('/store')
+  e.preventDefault(e)
+    props.addProduct()
   }
   
   
   return (
-    <div>
+    <div className='form'>
       <h1>Add A New Product Listing</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <TextInput
           type="text"
           value={props.newProduct.title}
           onChange={props.handleChange}
-          name={'name'}
-          placeholder={'name'}
+          name={'title'}
+          placeholder={'title'}
         />
         <TextInput
           type="text"
@@ -40,6 +42,13 @@ function ProductForm(props) {
           onChange={props.handleChange}
           name={'price'}
           placeholder={'price'}
+        />
+         <TextInput
+          type="text"
+          value={props.newProduct.brand}
+          onChange={props.handleChange}
+          name={'brand'}
+          placeholder={'brand'}
         />
         <button>Submit</button>
       </form>

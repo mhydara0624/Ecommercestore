@@ -19,20 +19,13 @@ function App() {
     brand: ''
   })
 
-  const addProduct = (e) => {
-    e.preventDefault()
-    axios.post(BASE_URL, {
-      title: '',
-      image: '',
-      description: '',
-      price: '',
-      brand: ''
-    })
+  const addProduct = async (req, res) => {
+    res = await axios.post(`${BASE_URL}`, newProduct)
   }
+
   const handleChange = (e) => {
-    const addedProduct = { ...setNewProduct }
-    addedProduct[e.target.id] = e.target.value
-    setNewProduct(addedProduct)
+    setNewProduct({ ...newProduct, [e.target.name]: e.target.value })
+    console.log(newProduct)
   }
   useEffect(() => {
     async function getProducts() {
@@ -63,7 +56,7 @@ function App() {
             path="/admin"
             render={(props) => (
               <ProductForm
-                {...props}
+                // {...props}
                 newProduct={newProduct}
                 handleChange={handleChange}
                 addProduct={addProduct}

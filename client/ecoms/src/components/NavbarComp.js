@@ -6,7 +6,7 @@ function Navbars() {
   return (
     <Navbar bg="primary" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Rare Electronics</Navbar.Brand>
+        <Navbar.Brand>Rare Electronics</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link as={NavLink} to="/">
             Home
