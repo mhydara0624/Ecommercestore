@@ -11,7 +11,7 @@ function ProductCard(props) {
         <Card.Title>{product.title}</Card.Title>
         <Card.Text> ${product.price} </Card.Text>
         <Card.Text>{product.description}</Card.Text>
-        <Button variant="primary">Add To Cart</Button>
+        <Button variant="primary">Delete Listing</Button>
       </Card.Body>
     </Card>
   )
