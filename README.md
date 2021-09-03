@@ -123,6 +123,42 @@ function ProductCard(props) {
   )
 }
 ```
+<li> In order to properly have my site function I needed to set up my browser router and make sure it was connecting and rendering the right pages. Below you will see how I went about doing that.
+
+```javascript
+ <div className="App">
+      <header>
+        <NavbarComp />
+      </header>
+      <main>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route
+            exact
+            path="/store"
+            component={(routerProps) => (
+              <Store {...routerProps} products={products} />
+            )}
+          />
+          <Route
+            exact
+            path="/admin"
+            render={(props) => (
+              <ProductForm
+                newProduct={newProduct}
+                handleChange={handleChange}
+                addProduct={addProduct}
+              />
+            )}
+          />
+        </Switch>
+      </main>
+    </div>
+  )
+}
+
+```
+
 </details> 
 
 
