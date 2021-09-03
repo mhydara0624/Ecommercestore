@@ -8,4 +8,6 @@ router.get('/products', controllers.getAllProducts)
 
 router.post('/products', controllers.createProducts)
 
+router.delete('/products/:id', controllers.deleteProduct)
+
 module.exports = router

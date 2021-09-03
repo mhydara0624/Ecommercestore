@@ -21,7 +21,21 @@ const getAllProducts = async (req, res) => {
   }
 }
 
+const deleteProduct = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Product.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send(' deleted')
+    }
+    throw new Error(' not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   createProducts,
-  getAllProducts
+  getAllProducts,
+  deleteProduct
 }
