@@ -99,6 +99,30 @@ const [products, setProducts] = useState([])
   }
 
 ```
+<li> I also used a Delete request that went along with a function in my product card component. The onClick of the button on my product cards displayed in store should delete that listing.
+
+```javascript
+function ProductCard(props) {
+  const { product } = props
+
+  const deleteListing = () => {
+    axios.delete(`http://localhost:3001/api/products/${props._id}`)
+  }
+  return (
+    <Card style={{ width: '19rem' }}>
+      <Card.Img variant="top" src={product.image} />
+      <Card.Body>
+        <Card.Title>{product.title}</Card.Title>
+        <Card.Text> ${product.price} </Card.Text>
+        <Card.Text>{product.description}</Card.Text>
+        <Button onClick={deleteListing} variant="primary">
+          Delete Listing
+        </Button>
+      </Card.Body>
+    </Card>
+  )
+}
+```
 </details> 
 
 
