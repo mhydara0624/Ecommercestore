@@ -171,6 +171,9 @@ function ProductCard(props) {
 </details>  
  
  # Credits
+ <li>  <a href = "https://www.youtube.com/watch?v=8pKjULHzs0s&t=526s">Adrian Twarog</a> -  I was able to use these videos in order to learn how to implement bootstrap components into my react app. This was very helpful.
+ <li> <a href = "https://jasonwatmore.com/post/2020/07/17/react-axios-http-get-request-examples">Jason Whatmore's Blog </a>- I was able to find proper syntax and use cases for using CRUD operations with React. It was a great review and helped build my understanding.
+ 
 
 
  # Future Updates
