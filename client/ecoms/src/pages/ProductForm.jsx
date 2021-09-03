@@ -1,6 +1,6 @@
 import React from 'react'
 import TextInput from '../components/TextInput'
-// import { Button } from 'react-bootstrap'
+import { ListGroup } from 'react-bootstrap'
 
 
 function ProductForm(props) {
@@ -52,7 +52,18 @@ function ProductForm(props) {
         />
         <button>Submit</button>
       </form>
+   <div className='brand'>
+   <h1>Accepted Brand Codes</h1>
+   <ListGroup>
+  <ListGroup.Item>612d4cf6feae565212f17b6b</ListGroup.Item>
+  <ListGroup.Item>612d4cf6feae565212f17b67</ListGroup.Item>
+  <ListGroup.Item>612d4cf6feae565212f17b68</ListGroup.Item>
+  <ListGroup.Item>612d4cf6feae565212f17b69</ListGroup.Item>
+  
+</ListGroup>
+   </div>
     </div>
+  
   )
 }
 
