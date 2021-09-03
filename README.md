@@ -67,7 +67,10 @@ module.exports = router
 
 <details>
 <summary> Front-End</summary>
-</details>  
+<li> The front end react app was much more expansive than the backend. My front end applications currently utilizes 3 pages. A Home page, Store page, and Product Form page. These pages were made with 3 components. My Nav component, Product Card and Text Input component.
+<li> 
+</details> 
+
 
 <details>
 <summary> Styling</summary>
