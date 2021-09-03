@@ -171,3 +171,7 @@ function ProductCard(props) {
 
 
  # Future Updates
+  - [ ] There will be a functioning cart component and page.
+ - [ ] Will implement a dropdown menu to select brands instead of copy/pasting brand id
+ - [ ] Will include Add to cart button instead of delete listing button
+ - [ ] Will try to update form from regular jsx to using bootstrap
