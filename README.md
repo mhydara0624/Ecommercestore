@@ -68,7 +68,21 @@ module.exports = router
 <details>
 <summary> Front-End</summary>
 <li> The front end react app was much more expansive than the backend. My front end applications currently utilizes 3 pages. A Home page, Store page, and Product Form page. These pages were made with 3 components. My Nav component, Product Card and Text Input component.
-<li> 
+<li> Most of my logic was contained in my APP.js page. This is where i deployed the Use State and Use Effect react hooks to display my array of products on the store page. Below I will show how i was able to implement my GET request with the frontend.
+
+```javascript
+const [products, setProducts] = useState([])
+
+ useEffect(() => {
+    async function getProducts() {
+      let res = await axios.get(`${BASE_URL}`)
+      console.log(res.data)
+      setProducts(res.data)
+    }
+    getProducts()
+    return
+  }, [])
+```
 </details> 
 
 
