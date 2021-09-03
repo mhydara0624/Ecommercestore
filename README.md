@@ -30,6 +30,22 @@ This E-commerce store will be a full stack MERN application is depolyed on Herok
 <li> The Back-End process started with using mongoose with mongodb and setting up boilerplate as well as the schemas for my data. I used two schema but used mongoose associations with my brand schema so I could use it without repeating it over multiple products. I made sure to export both. 
 <img src='mdpictures/productschema.png'>
 <li> After setting up my two schema I decided to set up a seed file to give my application data to begin with. After completing this and seeding the data into my database I was ready to move on to express.
+<li> Before setting up my express routes I set up my controllers so that I would be able to manipulate the data as needed. Below I have provided an example of my controllers with my POST request controller.
+
+```javascript
+const createProducts = async (req, res) => {
+  try {
+    const product = await new Product(req.body)
+    await product.save()
+    return res.status(201).json({
+      product
+    })
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
+  }
+}
+```
+<li>
 </details>  
 
 <details>
