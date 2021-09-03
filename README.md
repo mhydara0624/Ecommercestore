@@ -16,7 +16,7 @@ Ecommerce is the future of our economy. As an upcoming software engineer I want 
 <li> React
 <li> MongoDB
 <li> Mongoose
-<li> Heroku
+<li> <a href= 'https://limitless-bayou-16539.herokuapp.com/'>Heroku</a>
 
 # Getting Started
 This E-commerce store will be a full stack MERN application is depolyed on Heroku. This application will be a website with a store page displaying various electronics products along with their price and other information. The aim of this project was to be able to display 3 crud requests GET POST and DELETE. The GET is displayed This app is from an admin's view and they are able to import new products into the API and store page via the form. The GET request comes into play when displaying the store items in the database. The Delete function is with the delete list button.
@@ -173,7 +173,7 @@ function ProductCard(props) {
  # Credits
  <li>  <a href = "https://www.youtube.com/watch?v=8pKjULHzs0s&t=526s">Adrian Twarog</a> -  I was able to use these videos in order to learn how to implement bootstrap components into my react app. This was very helpful.
  <li> <a href = "https://jasonwatmore.com/post/2020/07/17/react-axios-http-get-request-examples">Jason Whatmore's Blog </a>- I was able to find proper syntax and use cases for using CRUD operations with React. It was a great review and helped build my understanding.
- 
+
 
 
  # Future Updates

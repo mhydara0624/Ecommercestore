@@ -25,8 +25,8 @@ function App() {
 
   const handleChange = (e) => {
     setNewProduct({ ...newProduct, [e.target.name]: e.target.value })
-    console.log(newProduct)
   }
+
   useEffect(() => {
     async function getProducts() {
       let res = await axios.get(`${BASE_URL}`)
