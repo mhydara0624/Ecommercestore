@@ -45,7 +45,24 @@ const createProducts = async (req, res) => {
   }
 }
 ```
-<li>
+<li> The importance of controllers is dispalyed when you see how simple express routes become when you can just reference the controller function. After testing my routes on insomnia I was able to begin to move on to react. Below I have shown my express routes.
+
+```javascript
+const { Router } = require('express')
+const router = Router()
+const controllers = require('../controllers')
+
+router.get('/', (req, res) => res.send('This is root!'))
+
+router.get('/products', controllers.getAllProducts)
+
+router.post('/products', controllers.createProducts)
+
+router.delete('/products/:id', controllers.deleteProduct)
+
+module.exports = router
+
+```
 </details>  
 
 <details>
