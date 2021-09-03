@@ -158,7 +158,7 @@ function ProductCard(props) {
 }
 
 ```
-
+<li> Note to user that my product form page contains a list of acceptable brand codes. My brand key in my schema references the brand object id. In order to post new functions you must use one of the existing brands so I have posted them on the form page for ease of use.
 </details> 
 
 
