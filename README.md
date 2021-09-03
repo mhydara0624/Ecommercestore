@@ -83,6 +83,22 @@ const [products, setProducts] = useState([])
     return
   }, [])
 ```
+<li> The post request was used along with a form to submit new products to be shown on the listings page. Below i will show how i implemented this.
+
+```javascript
+ const [newProduct, setNewProduct] = useState({
+    title: '',
+    image: '',
+    description: '',
+    price: '',
+    brand: ''
+  })
+
+  const addProduct = async (req, res) => {
+    res = await axios.post(`${BASE_URL}`, newProduct)
+  }
+
+```
 </details> 
 
 
