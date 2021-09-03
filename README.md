@@ -164,6 +164,7 @@ function ProductCard(props) {
 
 <details>
 <summary> Styling</summary>
+<li> This project was fun because I tried a new technique in using Bootstrap to use already styled components. Initially it was confusing but I got the hang of it and absolutelty loved it. I still also applied CSS principles by using flexbox to center my listings and using flexwrap and space between to distribute them easily.
 </details>  
  
  # Credits
