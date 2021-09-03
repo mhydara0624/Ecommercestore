@@ -3,6 +3,9 @@
 #
 Ecommerce is the future of our economy. As an upcoming software engineer I want to show I can make a product for real world use.
 
+<img src = 'mdpictures/homepage.png'>
+<img src = 'mdpictures/stores.png'>
+
 # Technologies Used
 <li>  <a href = "https://trello.com/b/BNq3IkjE/ecommerce-store">Trello </a>
 <li>  <a href = "https://github.com/mhydara0624/Ecommercestore">GitHub </a>
