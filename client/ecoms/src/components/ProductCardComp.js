@@ -4,9 +4,12 @@ import { Card, Button } from 'react-bootstrap'
 
 function ProductCard(props) {
   const { product } = props
+  console.log(props.product._id)
+  let id = props.product._id
 
   const deleteListing = () => {
-    axios.delete(`http://localhost:3001/api/products/${props._id}`)
+    axios.delete(`http://localhost:3001/api/products/${id}`)
+    window.location.reload()
   }
   return (
     <Card style={{ width: '19rem' }}>
