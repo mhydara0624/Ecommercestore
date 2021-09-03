@@ -16,7 +16,7 @@ Ecommerce is the future of our economy. As an upcoming software engineer I want 
 <li> Heroku
 
 # Getting Started
-This E-commerce store will be a full stack MERN application that will be depolyed on Heroku. This application will be a website with a store page displaying various electronics products along with their price and other information. The aim of this project was to be able to display 3 crud requests GET POST and DELETE. The GET is displayed This app is from an admin's view and they are able to import new products into the API and store page via the form. T
+This E-commerce store will be a full stack MERN application is depolyed on Heroku. This application will be a website with a store page displaying various electronics products along with their price and other information. The aim of this project was to be able to display 3 crud requests GET POST and DELETE. The GET is displayed This app is from an admin's view and they are able to import new products into the API and store page via the form. The GET request comes into play when displaying the store items in the database. The Delete function is with the delete list button.
 
 # ERD
  <img src = 'mdpictures/EcommerceERD3.png'>
@@ -27,7 +27,9 @@ This E-commerce store will be a full stack MERN application that will be depolye
 # Coding Structure
 <details>
 <summary> Back-End</summary>
-<li>
+<li> The Back-End process started with using mongoose with mongodb and setting up boilerplate as well as the schemas for my data. I used two schema but used mongoose associations with my brand schema so I could use it without repeating it over multiple products. I made sure to export both. 
+<img src='mdpictures/productschema.png'>
+<li> After setting up my two schema I decided to set up a seed file to give my application data to begin with. After completing this and seeding the data into my database I was ready to move on to express.
 </details>  
 
 <details>
