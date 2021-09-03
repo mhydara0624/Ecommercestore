@@ -9,13 +9,14 @@ Ecommerce is the future of our economy. As an upcoming software engineer I want 
 <li> Lucid Chart
 <li> Javascript
 <li> CSS
+<li> Bootstrap
 <li> React
 <li> MongoDB
 <li> Mongoose
 <li> Heroku
 
 # Getting Started
-This E-commerce store will be a full stack MERN application that will be depolyed on Heroku. This application will be a website with a store page displaying various electronics products along with their price and other information. Clicking onto the add cart button will add the products to a functional shopping cart. In addition it will have a checkout page with a form for payment.
+This E-commerce store will be a full stack MERN application that will be depolyed on Heroku. This application will be a website with a store page displaying various electronics products along with their price and other information. The aim of this project was to be able to display 3 crud requests GET POST and DELETE. The GET is displayed This app is from an admin's view and they are able to import new products into the API and store page via the form. T
 
 # ERD
  <img src = 'mdpictures/EcommerceERD3.png'>
@@ -26,6 +27,7 @@ This E-commerce store will be a full stack MERN application that will be depolye
 # Coding Structure
 <details>
 <summary> Back-End</summary>
+<li>
 </details>  
 
 <details>

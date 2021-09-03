@@ -5,13 +5,17 @@ function Store(props){
   const productse = props.products.products
   console.log(props)
   console.log(productse)
-  const storeListings = productse.map((product) => {
+  let storeListings; 
+  if(productse) { 
+    storeListings= productse.map((product) => {
     return (
       < ProductCard
-      key={`${product._id}`} 
-      product = {product}/>
+      key={`${product.id}`} 
+      product = {product}
+      />
     )
   })
+}
 return<div className="listings"> {storeListings} </div>
 }
 

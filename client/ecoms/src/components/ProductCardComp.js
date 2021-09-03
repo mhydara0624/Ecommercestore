@@ -1,14 +1,13 @@
 import axios from 'axios'
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
-import { BASE_URL } from '../globals'
 
 function ProductCard(props) {
   const { product } = props
 
-  // const deleteListing = (props) => {
-  //   axios.delete(`${BASE_URL}` / { props })
-  // }
+  const deleteListing = () => {
+    axios.delete(`http://localhost:3001/api/products/${props._id}`)
+  }
   return (
     <Card style={{ width: '19rem' }}>
       <Card.Img variant="top" src={product.image} />
@@ -16,7 +15,9 @@ function ProductCard(props) {
         <Card.Title>{product.title}</Card.Title>
         <Card.Text> ${product.price} </Card.Text>
         <Card.Text>{product.description}</Card.Text>
-        <Button variant="primary">Delete Listing</Button>
+        <Button onClick={deleteListing} variant="primary">
+          Delete Listing
+        </Button>
       </Card.Body>
     </Card>
   )
