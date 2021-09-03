@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
+import { BASE_URL } from '../globals'
 
 function ProductCard(props) {
   const { product } = props
@@ -8,7 +9,7 @@ function ProductCard(props) {
   let id = props.product._id
 
   const deleteListing = () => {
-    axios.delete(`http://localhost:3001/api/products/${id}`)
+    axios.delete(`${BASE_URL}/${id}`)
     window.location.reload()
   }
   return (
